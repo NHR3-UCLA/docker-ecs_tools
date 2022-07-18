@@ -1,0 +1,6 @@
+[submodule "ecs_tools"]
+	path = ecs_tools
+	url = https://github.com/NHR3-UCLA/ecs_tools.git
+[submodule "distance_metrics"]
+	path = distance_metrics
+	url = https://github.com/glavrentiadis/distance_metrics.git
