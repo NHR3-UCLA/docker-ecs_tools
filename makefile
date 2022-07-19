@@ -13,7 +13,10 @@ PWD=$(shell pwd)
 
 all: update_submodules build run
 
-update_submodules:
+init_submodules:
+	git submodule update --init --recursive
+
+update_submodules: init_submodules
 	git submodule foreach git pull origin main
 
 build_dist_metrics: update_submodules
